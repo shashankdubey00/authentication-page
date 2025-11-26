@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <form class="login">
+        <div class="header">
+            <h1>Login</h1>
+            <p>login here to verify</p>
+        </div>
+        <div class="form" action="">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="password">Password</label>
+            <input type="password" id="password" 
+            name="password">
+
+            <div class="options">
+                <label><input type="checkbox" >Remember me</label>
+                <a href="#">forget password?</a>
+            </div>
+            
+            <button type="submit" class="login-btn">login</button>
+            <div class="divider">or login with</div>
+            <div class="social-icons">
+                <button class="facebook"><i class="fab fa-facebook-f"></i> facebook</button>
+                <button class="Google"><i class="fab fa-google"></i> google</button>
+            </div>
+            <p>don't have an account?<a href="sign.html">signup</a></p>
+            <p class="message"></p>
+        </div>
+
+    </form>
+    <script src="log.js"></script>
+    
+</body>
+</html>
+
+<!-- 🧩 Final Layout for login form
+Header → “Welcome Back”
+Form Inputs → Email + Password
+Options Row → Remember me ✅ + Forgot Password 🔗
+Login Button → “Login”
+OR Login With → Facebook + Google buttons
+Footer Text → “Don't have an account? Sign up”  -->

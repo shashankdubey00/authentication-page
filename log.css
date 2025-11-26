@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url("pexels-therato-1933320.jpg") center center / cover no-repeat fixed; /*ensures the image always covers the full visible area (even on large screens). [image] [position] / [size] [repeat] [attachment]*/
+    background-color: #eee8e8; /*So, before the image loads, it’ll show a white background.*/ 
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    border-radius: 15px;
+    width: 350px;
+    padding: 25px;
+    /* 🔹 Core glassmorphism effect */
+    background: rgba(255, 255, 255,0.15); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    color: white;
+
+}
+.header{
+    text-align: center;
+    margin-bottom:20px ;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form input{
+    font-size: 16px;
+    padding: 8px;
+    
+}
+.form a {
+    padding: 5px;
+    margin-left: 1px;
+    border-radius: 8px;
+    color: rgb(239, 218, 237);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.form p{
+    margin-top: 10px;
+}
+.login-btn{
+    padding: 8px;
+    margin: 10px 100px;
+    font-size: large;
+}
+.divider{
+    text-align: center;
+    margin: 8px;
+
+
+}
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.options{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+.social-icons button:hover{
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+.form a:hover{
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
